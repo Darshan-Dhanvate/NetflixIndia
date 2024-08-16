@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.main{
+    background-image: url(assets/Images/bg.jpg);
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 644px;
+    position: relative;
+}
+
+.main .layer{
+    height:644px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.55;
+    position: absolute;
+    top: 0;
+}
+
+nav{
+    max-width: 75vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+nav img{
+    color: red;
+    width: 140px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button{
+    position: relative;
+    z-index: 10;
+}
+
+.mainHeading{
+    font-family: "Martel Sans", sans-serif;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 20px;
+    padding: 0 30px;
+}
+
+.mainHeading> :first-child{
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.mainHeading> :nth-child(2){
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.mainHeading> :nth-child(3){
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.seperation{
+    height: 7px;
+    background-color:rgb(53, 51, 51);
+    position: relative;
+    z-index: 12;
+}
+
+.nav-btn{
+    background-color: red;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color, 0.3s;
+}
+
+nav div{
+    display: flex;
+    gap: 20px;
+}
+
+.dropdown{
+    position: relative;
+    width: 115px;
+}
+
+.dropdown select{
+    width: 100%;
+    padding: 0px 5px;
+    text-align: center;
+    position:relative;
+    z-index: 10;
+    appearance: none;
+    border-radius: 4px;
+    color: white;
+    background-color: rgba(23, 23, 23, 0.3);
+    /* transparent background color */
+    font-size: 16px;
+
+    background-image:url(assets/Images/translate.svg), url(assets/Images/downarrow.svg);
+    background-size: 18px, 20px;
+    background-origin: content-box; 
+    /* now bg image will not occupy padding area */
+    background-repeat: no-repeat;
+    background-position: left, right;
+
+    transition: all 1s ease-out;
+}
+
+.emailTypebtn{
+    width: 350px;
+    padding: 15px 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: rgba(23, 23, 23, 0.8);
+    border: 1px solid rgb(107, 106, 106);
+}
+
+.getStartedbtn{
+    background-color: red;
+    border: none;
+    font-size: 26px;
+    padding: 6px 14px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color, 0.3s;
+}
+
+.getStartedbtn:hover{
+    background-color: rgb(164, 35, 35);
+}
+
+.nav-btn:hover{
+    background-color: rgb(164, 35, 35);
+}
+
+.emailinput{
+    display: flex;
+    gap: 10px;
+}
+
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 70vw;
+    margin: auto;
+}
+
+.firstimg{
+    position: relative;
+}
+
+.firstimg img{
+    width: 600px;
+    position: relative;
+    z-index: 10;
+    top: 10px;
+}
+
+.firstimg video{
+    position: absolute;
+    top: 91px;
+    left: 48px;
+}
+
+.firsttext :first-child{
+    font-size: 48px;
+    font-weight: 900;
+}
+.firsttext :nth-child(2){
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 75vw;
+    margin: auto;
+}
+
+.secondtext :first-child{
+    font-size: 48px;
+    font-weight: 900;
+}
+.secondtext :nth-child(2){
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.secondimg{
+    position: relative;
+}
+
+.second-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+
+    border: 2px solid grey;
+    width: 53%;
+    height: 20%;
+    background-color: black;
+    position: absolute;
+    top: 70%;
+    left: 23%;
+    border-radius: 12px;
+}
+
+.second-box img{
+    height: 80%;
+    width: 17%;
+}
+
+.second-box-text :first-child{
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.second-box-text :nth-child(2){
+    font-size: 14px;
+    color: #0071EB;
+}
+
+.second-animation{
+    width: 20%;
+    height: 30%;
+}
+
+.thirdimg{
+    position: relative;
+}
+
+.thirdimg img{
+    width: 600px;
+    position: relative;
+    z-index: 10;
+    top: 10px;
+}
+
+.thirdimg video{
+    position: absolute;
+    top: 67px;
+    left: 112px;
+    width: 61%;
+}
+
+.faq h2{
+    color: white;
+    font-size: 46px;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.faqbox{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    max-width: 68%;
+    margin: 10px auto;
+    padding: 25px 64px;
+    background-color: #2d292d;
+    font-size: 24px;
+    border-radius:2px;
+    cursor: pointer;
+    transition: background-color, 0.3s;;
+}
+
+.faqbox:hover{
+    background-color: #373637;
+    color: white;
+}
+
+.section-end{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-end> :first-child{
+    font-size: 20px;
+    margin: 40px 0px 5px 0px;
+}
+
+.section-end> :nth-child(2){
+    margin: 0px 0px 70px 0px;
+}
+
+footer{
+    max-width: 75%;
+    color: rgba(255, 255, 255, 0.7);
+    margin: auto;
+    font-size: 14px;
+}
+
+.Grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 20px;
+}
+.griditems{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.griditems a{
+    color: rgba(255, 255, 255, 0.7);
+    margin: 10px 0 10px 0;
+}
+
+.Questions{
+    margin: 65px 0 20px 0;
+    font-size: 17px;
+}
+
+.netflixIndia{
+    margin: 25px 0 50px 0;
+}
+
+/* now creating website responsive */
+@media screen and (max-width:1170px){
+    .first{
+        flex-wrap: wrap;
+    }
+
+    .second{
+        flex-wrap: wrap;
+    }
+    
+    .second .secondtext{
+        padding: 35px 0 0 0;
+    }
+    
+    .first .firsttext{
+        padding: 35px 0 0 0;
+    }
+
+    .firsttext :first-child{
+        font-size: 35px;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    .firsttext :nth-child(2){
+        font-size: 16px;
+        text-align: center;
+    }
+    .secondtext :first-child{
+        font-size: 35px;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    .secondtext :nth-child(2){
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .fourth{
+        margin-bottom: 50px;
+    }
+
+    .second .secondtext{
+        padding: 0px 0 30px 0;
+    }
+
+    .firstimg img{
+        width: 370px;
+    }
+    
+    .firstimg video{
+        width: 295px;
+        top: 70px;
+    }
+
+    .thirdimg img{
+        width: 380px;
+    }
+    
+    .thirdimg video{
+        width: 242px;
+        top: 46px;
+        left: 63px;
+    }
+
+    .secondimg img{
+        width: 370px;
+    }
+
+    .second-box img {
+        height: 80%;
+        width: 20%;
+        margin-left: 10px;
+    }
+
+    .second-box-text :first-child {
+        font-size: 11px;
+        color: #FFFFFF;
+    }
+
+    .second-box-text :nth-child(2) {
+        font-size: 9px;
+        color: #0071EB;
+    }
+
+    .faq h2 {
+        color: white;
+        font-size: 22px;
+        text-align: center;
+        padding: 20px 0px;
+    }
+
+    nav img {
+        width: 90px;
+    }
+
+    .dropdown select {
+        width: 100%;
+        height: 100%;
+        background-size: 10px, 10px;
+        margin-left: 15px;
+        font-size: 12px;
+    }
+
+    .mainHeading> :first-child {
+        font-size: 35px;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    .nav-btn {
+        width: 50%;
+    }
+
+    .faqbox {
+        max-width: 86%;
+        font-size: 14px;
+        padding: 10px 10px;
+        gap: 90px;
+    }
+
+    .section-end> :first-child {
+        text-align: center;
+        font-size: 16px;
+        margin: 40px 0px 5px 0px;
+    }
+
+    .getStartedbtn {
+        height: 37px;
+        width: 118px;
+        font-size: 13px;
+    }
+
+    .emailTypebtn {
+        height: 6px;
+        width: 224px;
+    }
+
+    .Grid {
+        font-size: 9px;
+        gap: 30px;
+    }
+
+    .Questions {
+        font-size: 13px;
+    }
+
+    .netflixIndia {
+        font-size: 13px;
+    }
+}
